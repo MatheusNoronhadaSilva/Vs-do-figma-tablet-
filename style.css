@@ -4,7 +4,6 @@
     box-sizing: border-box ;
 }
 body{
-    background-color: blueviolet;
     display: grid;
     height: 100vh;
     width: 100vw;
@@ -160,6 +159,9 @@ main{
 }
 #info > span:first-child{
     padding-right: 35px;
+}
+#info > img{
+    height: 45px;
 }
 #tempo{
     display: flex;

@@ -1,183 +1,62 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box ;
-}
-body{
-    display: grid;
-    height: 100vh;
-    width: 100vw;
-    grid-template-rows: 82px 1fr;
-    padding: 32px 16px 0px 16px;
-    overflow: hidden;
-    background-color: #fdfdfd;
-}
-header{
-    display: flex;
-    flex-direction: row;
-    gap: 3rem;
-    align-items: center;
-    justify-content: center;
-}
-#divheader{
-    display: flex;
-    flex-direction: row;
-    gap: 3rem;
-}
-h1{
-    font-size: 2.5rem;
-    padding-right: 1rem;
-}
-#lupa{
-    height: 2rem;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Tablet</title>
+</head>
+<body>
+    <header>
+            <h1>foco</h1>
+        <div id="navegação">
+            <img id="lupa" src="./img/Lupa.png" alt="">
+            <img id="cesta" src="./img/Cesra.png" alt="">
+        </div>
+        <div id="Sing">
+            <img src="./img/Usuário.png" alt="">
+            <span>Sing in</span>
+        </div>
+        <div id="Login">
+            <img src="./img/Sair.png" alt="">
+            <span>Login</span>
+        </div>
+        <img id="menu" src="./img/menu.png" alt="">
+    </header>
+    <main>
+        <div id="total">
+            <span id="preço">Total order : <span>$24.30</span></span>
+            <img src="./img/image-removebg-preview.png" alt="">
+            <img src="./img/image-removebg-preview (1).png" alt="">
+        </div>
+        <div id="mais">
+            <span>View More Foods</span>
+            <div id="hamburguer">
+                <div class="setas"><</div>
+                <img src="./img/hambúrguer.png" alt="">
+                <div class="setas">></div>
+            </div>
+        </div>
+    <img id="salada" src="./img/Salada1.png" alt="">
+    <img id="fundo" src="./img/FUNDOFUNDO.png" alt="">
     
-}
-#cesta{
-    height: 3rem;
-}
-#Login{
-    display: flex;
-    background-color: #ffe195;
-    border-radius: 25px;
-    position: relative;
-    height: 60px;
-}
-#Login > span{
-    position: relative;
-    text-align: center;
-    line-height: 3.75rem;
-    font-weight: bold;
-    padding-right: 10px;
-    font-size: 23px;
-}
-#Login > img{
-    position: relative;
-    height: 50px;
-    padding-top: 8px;
-    padding-right: 10px;
-    line-height: 90px;
-}
-#Sing{
-    display: flex;
-    border: 1px solid ;
-    border-radius: 25px;
-    position: relative;
-    height: 60px;
-    background-color: black;
-}
-#Sing > span{
-    position: relative;
-    line-height: 3.75rem;
-    padding-right: 0.625rem;
-    font-weight: bold;
-    color: white;
-    font-size: 23px;
-}
-#Sing > img {
-    height: 50px;
-    padding-right: 15px;
-    padding-left: 10px;
-}
-#menu{
-    height: 40px;
-    width: 60px;
-    line-height: 20px;
-}
+    <div id="resumo">
+        <div id="info">
+            <span>Salad</span>
+            <span>4.7</span>
+            <img src="./img/estrela.png" alt="">
+        </div>
+        <div id="tempo">
+            <img src="./img/image-removebg-preview (3).png" alt="">
+            <span>10 -18 mins</span>
+        </div>
+    </div>
 
-main{
-    display: grid;
-    grid-template-areas: 
-    "p1 p2"
-    ;
-    height: 25rem;
-    grid-template-columns: 28.125rem 17.875rem;
-}
-#total{
-    grid-area: p1;
-    padding-top: 8rem;
-}
-#preço{
-    font-size: 2.5rem;
-}
-#preço > span{
-    font-weight: bold;
-}
-#mais{
-    grid-area: p2;
-    padding-top: 4rem;
-}
-#mais > span{
-    display: flex;
-    font-size: 2rem;
-    font-weight: bold;
-    justify-content: center;
-}
-#hamburguer{
-    display: flex;
-    justify-content: center;
-    padding-top: 2rem;
-}
-.setas{
-    font-size: 2rem;
-    box-shadow: inset 0 0 6px 1px black;
-    border-radius: 32px;
-    text-align: center;
-    place-self: center;
-    font-weight: bold;
-    padding: 0.5rem;
-}
-#fundo{
-    position: absolute;
-    bottom: 0;
-    height: 28.125rem;
-    width: 46.875rem;
-}
-#salada{
-    position: absolute;
-    bottom: 14rem;
-    z-index: +1;
-    height: 26rem;
-    right: 8rem;
-}
-#resumo{
-    background-color: orange;
-    position: absolute;
-    padding: 120px 32px 32px 32px;
-    bottom: 40px;
-    right: 240px;
-    width: 280px;
-    height: 300px;
-    border-radius: 32px;
-}
-#info{
-    display: flex;
-    padding-bottom: 30px;
-}
-#info > span{
-    font-size: 45px;
-    color: white;
-}
-#info > span:first-child{
-    padding-right: 35px;
-}
-#info > img{
-    height: 45px;
-}
-#tempo{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    border: 2px solid white;
-    border-radius: 32px;
-    height: 50px;
-    gap: 20px;
-}
-#tempo > img{
-    height: 40px;
-}
-#tempo > span{
-    color: white;
-    font-weight: bold;
-}
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
